@@ -130,36 +130,48 @@
 
         <div class="project-list">
           <!-- Project 01 -->
-          <article class="project-card">
-            <div class="project-meta">
-              <span class="project-number">01</span>
-              <div>
-                <p class="project-subtitle mb-1">From Chaos to Clarity</p>
-                <h3 class="mb-2">Smart Timetable Scheduler</h3>
-              </div>
+          <div class="project-content">
+            <p>
+              An intelligent timetable generation system designed to automate academic
+              scheduling while handling constraints such as faculty conflicts, room
+              availability, lab requirements and subject frequency.
+            </p>
+
+            <div class="tech-chip-row" aria-label="Technologies used">
+              <span class="chip">Python</span>
+              <span class="chip">PHP</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Bootstrap</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">OR-Tools</span>
             </div>
 
-            <div class="project-content">
-              <p>An intelligent timetable generation system designed to automate academic scheduling while handling constraints such as faculty conflicts, room availability, lab requirements and subject frequency.</p>
-
-              <div class="tech-chip-row" aria-label="Technologies used">
-                <span class="chip">Python</span>
-                <span class="chip">PHP</span>
-                <span class="chip">JavaScript</span>
-                <span class="chip">Bootstrap</span>
-                <span class="chip">FastAPI</span>
-                <span class="chip">OR-Tools</span>
-              </div>
-
-              <div class="project-visual project-visual-scheduler" role="img" aria-label="Placeholder visual for Smart Timetable Scheduler project"></div>
-
-              <div class="d-flex flex-column flex-sm-row flex-wrap gap-3">
-                <a class="btn btn-accent" href="#" data-placeholder="YOUR_GITHUB_URL">GitHub</a>
-                <a class="btn btn-outline-light" href="#" data-placeholder="YOUR_LIVE_DEMO_URL">Live Demo</a>
-                <button class="btn btn-ghost" type="button" data-bs-toggle="modal" data-bs-target="#projectOneModal">View Details</button>
-              </div>
+            <div class="project-visual project-visual-scheduler">
+              <img
+                src="assets/images/timetable-preview.jpg"
+                alt="Smart Timetable Scheduler interface showing a generated academic timetable"
+                class="project-image"
+              >
             </div>
-          </article>
+
+            <div class="d-flex flex-column flex-sm-row flex-wrap gap-3">
+              <a class="btn btn-accent" href="#" data-placeholder="YOUR_GITHUB_URL">
+                GitHub
+              </a>
+
+              <a class="btn btn-outline-light" href="#" data-placeholder="YOUR_LIVE_DEMO_URL">
+                Live Demo
+              </a>
+
+              <button
+                class="btn btn-ghost"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#projectOneModal">
+                View Details
+              </button>
+            </div>
+          </div>
 
           <!-- Project 02 -->
           <article class="project-card">
@@ -172,8 +184,11 @@
             </div>
 
             <div class="project-content">
-              <p>A hybrid resume screening framework combining TF-IDF semantic embeddings and rule-based skill verification to produce more explainable candidate rankings.</p>
-
+              <p>
+                A hybrid resume screening framework combining TF-IDF,
+                SBERT semantic embeddings, and rule-based skill verification
+                to produce more explainable candidate rankings.
+              </p>
               <div class="tech-chip-row" aria-label="Technologies used">
                 <span class="chip">Python</span>
                 <span class="chip">TF-IDF</span>
@@ -182,8 +197,12 @@
                 <span class="chip">spaCy</span>
               </div>
 
-              <div class="project-visual project-visual-ai" role="img" aria-label="Placeholder visual for AI Resume Screening project"></div>
-
+              <div class="project-visual project-visual-ai">
+                <img
+                  src="assets/images/resume-ai-preview.jpg"
+                  alt="AI Resume Screening interface showing resume matching and candidate ranking"
+                  class="project-image">
+              </div>
               <div class="d-flex flex-column flex-sm-row flex-wrap gap-3">
                 <a class="btn btn-accent" href="#" data-placeholder="YOUR_GITHUB_URL">GitHub</a>
                 <a class="btn btn-outline-light" href="#research">Research</a>
@@ -214,8 +233,12 @@
                 <span class="chip">Microsoft SQL Server</span>
               </div>
 
-              <div class="project-visual project-visual-management" role="img" aria-label="Placeholder visual for Teacher and Student Management System project"></div>
-
+              <div class="project-visual project-visual-ai">
+                <img
+                  src="assets/images/T&SMS.jpg"
+                  alt="Teacher & Student Management System"
+                  class="project-image">
+              </div>
               <div class="d-flex flex-column flex-sm-row flex-wrap gap-3">
                 <button class="btn btn-ghost" type="button" data-bs-toggle="modal" data-bs-target="#projectThreeModal">View Details</button>
                 <button class="btn btn-outline-light" type="button" disabled>GitHub</button>
