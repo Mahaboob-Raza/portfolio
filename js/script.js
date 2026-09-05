@@ -73,7 +73,49 @@
   function initPlaceholderLinks() {
     document.querySelectorAll('[data-placeholder]').forEach((link) => {
       link.addEventListener('click', (event) => {
+        if (link.target === '_blank') {
+          return;
+        }
+
         event.preventDefault();
+      });
+    });
+  }
+
+  function initExpandableSections() {
+    document.querySelectorAll('.project-details-toggle, .research-details-toggle').forEach((button) => {
+      button.addEventListener('click', () => {
+        const details = document.getElementById(button.getAttribute('aria-controls'));
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+        if (!details) {
+          return;
+        }
+
+        button.setAttribute('aria-expanded', String(!isExpanded));
+        button.textContent = button.classList.contains('research-details-toggle')
+          ? (isExpanded ? 'Research' : 'Hide Research')
+          : (isExpanded ? 'View Details' : 'Hide Details');
+        details.classList.toggle('is-expanded', !isExpanded);
+        details.setAttribute('aria-hidden', String(isExpanded));
+      });
+    });
+  }
+
+  function initCertificateToggle() {
+    const toggle = document.querySelector('#certificateToggle');
+    const extraCertificates = document.querySelectorAll('.certificate-extra');
+
+    if (!toggle || extraCertificates.length === 0) {
+      return;
+    }
+
+    toggle.addEventListener('click', () => {
+      const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!isExpanded));
+      toggle.textContent = isExpanded ? 'View All Certificates' : 'Show Fewer Certificates';
+      extraCertificates.forEach((certificate) => {
+        certificate.classList.toggle('is-visible', !isExpanded);
       });
     });
   }
@@ -90,5 +132,7 @@
   initRevealObserver();
   initHeroImage();
   initPlaceholderLinks();
+  initExpandableSections();
+  initCertificateToggle();
   setNavbarState();
 })();

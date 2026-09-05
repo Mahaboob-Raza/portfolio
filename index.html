@@ -29,6 +29,7 @@
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -125,53 +126,53 @@
             <p class="section-kicker">FEATURED PROJECTS</p>
             <h2>Selected work with software, AI and systems focus.</h2>
           </div>
-          <p class="section-summary">Each project card below has a detailed modal, a visual placeholder area and space for future live links.</p>
+          <p class="section-summary">Each project card below includes inline details, a scrollable visual area and space for future live links.</p>
         </div>
 
         <div class="project-list">
           <!-- Project 01 -->
-          <div class="project-content">
-            <p>
-              An intelligent timetable generation system designed to automate academic
-              scheduling while handling constraints such as faculty conflicts, room
-              availability, lab requirements and subject frequency.
-            </p>
-
-            <div class="tech-chip-row" aria-label="Technologies used">
-              <span class="chip">Python</span>
-              <span class="chip">PHP</span>
-              <span class="chip">JavaScript</span>
-              <span class="chip">Bootstrap</span>
-              <span class="chip">FastAPI</span>
-              <span class="chip">OR-Tools</span>
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-number">01</span>
+              <div>
+                <p class="project-subtitle mb-1">From Chaos to Clarity</p>
+                <h3 class="mb-2">Smart Timetable Scheduler</h3>
+              </div>
             </div>
-
-            <div class="project-visual project-visual-scheduler">
-              <img
-                src="assets/images/timetable-preview.jpg"
-                alt="Smart Timetable Scheduler interface showing a generated academic timetable"
-                class="project-image"
-              >
+            <div class="project-content">
+              <p>An intelligent timetable generation system designed to automate academic scheduling while handling constraints such as faculty conflicts, room availability, lab requirements and subject frequency.</p>
+              <div class="tech-chip-row" aria-label="Technologies used">
+                <span class="chip">Python</span>
+                <span class="chip">PHP</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">Bootstrap</span>
+                <span class="chip">FastAPI</span>
+                <span class="chip">OR-Tools</span>
+              </div>
+              <div class="project-image-wrapper">
+                <img src="assets/images/timetable-preview.jpg" alt="Smart Timetable Scheduler screenshot" class="project-image">
+              </div>
+              <div class="d-flex flex-column flex-sm-row flex-wrap gap-3">
+                <a class="btn btn-outline-light" href="#" data-placeholder="YOUR_LIVE_DEMO_URL">Live Demo</a>
+                <button class="btn btn-ghost project-details-toggle" type="button" aria-expanded="false" aria-controls="projectOneDetails">View Details</button>
+              </div>
+              <div class="project-details" id="projectOneDetails" aria-hidden="true">
+                <p class="details-heading">OVERVIEW</p>
+                <p>An intelligent timetable generation system designed to automate academic scheduling while handling constraints such as faculty conflicts, room availability, lab requirements and subject frequency.</p>
+                <p class="details-heading">MAIN FEATURES</p>
+                <ul class="details-list">
+                  <li>Automated timetable generation</li>
+                  <li>Constraint handling for faculty, rooms and labs</li>
+                  <li>Subject frequency management</li>
+                  <li>Academic scheduling workflow</li>
+                </ul>
+                <p class="details-heading">TECHNOLOGIES</p>
+                <p>Python, PHP, JavaScript, Bootstrap, FastAPI, OR-Tools</p>
+                <p class="details-heading">PROJECT ROLE / CONTRIBUTION</p>
+                <p class="mb-0">Lead Developer</p>
+              </div>
             </div>
-
-            <div class="d-flex flex-column flex-sm-row flex-wrap gap-3">
-              <a class="btn btn-accent" href="#" data-placeholder="YOUR_GITHUB_URL">
-                GitHub
-              </a>
-
-              <a class="btn btn-outline-light" href="#" data-placeholder="YOUR_LIVE_DEMO_URL">
-                Live Demo
-              </a>
-
-              <button
-                class="btn btn-ghost"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#projectOneModal">
-                View Details
-              </button>
-            </div>
-          </div>
+          </article>
 
           <!-- Project 02 -->
           <article class="project-card">
@@ -197,16 +198,31 @@
                 <span class="chip">spaCy</span>
               </div>
 
-              <div class="project-visual project-visual-ai">
+              <div class="project-image-wrapper">
                 <img
                   src="assets/images/resume-ai-preview.jpg"
-                  alt="AI Resume Screening interface showing resume matching and candidate ranking"
+                  alt="AI Resume Screening research infographic"
                   class="project-image">
               </div>
               <div class="d-flex flex-column flex-sm-row flex-wrap gap-3">
-                <a class="btn btn-accent" href="#" data-placeholder="YOUR_GITHUB_URL">GitHub</a>
-                <a class="btn btn-outline-light" href="#research">Research</a>
-                <button class="btn btn-ghost" type="button" data-bs-toggle="modal" data-bs-target="#projectTwoModal">View Details</button>
+                <a class="btn btn-outline-light" href="assets/documents/Ai_Resume_Screening_IEEE_Paper.pdf" target="_blank" rel="noopener noreferrer">Read Paper</a>
+                <button class="btn btn-ghost project-details-toggle" type="button" aria-expanded="false" aria-controls="projectTwoDetails">View Details</button>
+              </div>
+              <div class="project-details" id="projectTwoDetails" aria-hidden="true">
+                <p class="details-heading">RESEARCH</p>
+                <h4>A Hybrid TF-IDF–SBERT Framework with Rule-Based Skill Verification for Explainable, Bias-Mitigated Resume Screening</h4>
+                <p>This research presents a hybrid approach to resume screening that combines traditional keyword-based matching, semantic similarity, and deterministic skill verification to produce more explainable candidate rankings.</p>
+                <div class="research-inline-components">
+                  <article class="research-inline-component"><span>01 — TF-IDF</span><p>Keyword-based relevance and matching</p><strong>15%</strong></article>
+                  <article class="research-inline-component"><span>02 — SBERT</span><p>Semantic similarity and contextual understanding</p><strong>45%</strong></article>
+                  <article class="research-inline-component"><span>03 — Rule-Based Skill Verification</span><p>Explicit skill extraction and matching</p><strong>40%</strong></article>
+                </div>
+                <p class="details-heading">WHAT THE RESEARCH FOCUSES ON</p>
+                <p>The framework is designed to improve the explainability of automated resume screening while reducing the influence of personally identifying information during preprocessing.</p>
+                <p class="details-heading">TECHNOLOGIES</p>
+                <p>Python, TF-IDF, SBERT, NLP, spaCy</p>
+                <p class="details-heading">PROJECT ROLE / CONTRIBUTION</p>
+                <p class="mb-0">Lead Researcher & Lead Developer</p>
               </div>
             </div>
           </article>
@@ -233,53 +249,41 @@
                 <span class="chip">Microsoft SQL Server</span>
               </div>
 
-              <div class="project-visual project-visual-ai">
+              <div class="project-image-wrapper">
                 <img
                   src="assets/images/T&SMS.jpg"
                   alt="Teacher & Student Management System"
                   class="project-image">
               </div>
               <div class="d-flex flex-column flex-sm-row flex-wrap gap-3">
-                <button class="btn btn-ghost" type="button" data-bs-toggle="modal" data-bs-target="#projectThreeModal">View Details</button>
-                <button class="btn btn-outline-light" type="button" disabled>GitHub</button>
+                <button class="btn btn-ghost project-details-toggle" type="button" aria-expanded="false" aria-controls="projectThreeDetails">View Details</button>
+              </div>
+              <div class="project-details" id="projectThreeDetails" aria-hidden="true">
+                <p class="details-heading">OVERVIEW</p>
+                <p>A web-based teacher and student management system developed as my Diploma major project, providing dedicated functionality for administrators, teachers and students.</p>
+                <p class="details-heading">MAIN FEATURES</p>
+                <ul class="details-list">
+                  <li>Admin, student and teacher registration</li>
+                  <li>Role-based dashboards</li>
+                  <li>User profiles</li>
+                  <li>Subject management</li>
+                  <li>Marks management</li>
+                  <li>Marks monitoring</li>
+                  <li>Attendance tracking</li>
+                  <li>Routine management</li>
+                  <li>Assignment management</li>
+                  <li>Assignment submission</li>
+                  <li>Announcements</li>
+                  <li>News and events</li>
+                  <li>Responsive design</li>
+                </ul>
+                <p class="details-heading">TECHNOLOGIES</p>
+                <p>ASP.NET, HTML5, CSS3, Bootstrap 4, JavaScript, Microsoft SQL Server</p>
+                <p class="details-heading">PROJECT ROLE / CONTRIBUTION</p>
+                <p class="mb-0">Lead Developer</p>
               </div>
             </div>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Research -->
-    <section id="research" class="section-pad">
-      <div class="container reveal">
-        <div class="research-panel">
-          <div class="section-heading mb-4">
-            <p class="section-kicker">RESEARCH</p>
-            <h2>Hybrid TF-IDF, SBERT and rule-based screening.</h2>
-          </div>
-
-          <h3 class="research-title">A Hybrid TF-IDF–SBERT Framework with Rule-Based Skill Verification for Explainable, Bias-Mitigated Resume Screening</h3>
-          <p class="research-description">This work combines TF-IDF, SBERT and rule-based skill verification to create a screening flow that can surface relevant resumes while keeping the ranking logic more transparent.</p>
-
-          <div class="score-grid" aria-label="Scoring concept">
-            <div class="score-row">
-              <span>TF-IDF</span>
-              <strong>15%</strong>
-              <div class="score-bar"><span style="width: 15%;"></span></div>
-            </div>
-            <div class="score-row">
-              <span>SBERT</span>
-              <strong>45%</strong>
-              <div class="score-bar"><span style="width: 45%;"></span></div>
-            </div>
-            <div class="score-row">
-              <span>Skill</span>
-              <strong>40%</strong>
-              <div class="score-bar"><span style="width: 40%;"></span></div>
-            </div>
-          </div>
-
-          <a class="btn btn-accent mt-4" href="#" data-placeholder="YOUR_PAPER_URL">Read Research</a>
         </div>
       </div>
     </section>
@@ -298,13 +302,38 @@
             <div class="timeline-card">
               <div class="timeline-top">
                 <div>
+                  <h3 class="mb-1">Python Developer</h3>
+                  <p class="timeline-company mb-0">CODEXINTERN · Remote</p>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-date">Aug 2025 · 1 month</span>
+                </div>
+              </div>
+              <p>Completed structured Python and development training through practical coding assignments and three major internship projects. Worked with mentors and peers to improve implementation quality, problem-solving and development practices.</p>
+              <p class="timeline-tech mb-0">Python · NumPy · Problem solving · Development practices</p>
+              <div class="timeline-card-footer">
+                <a class="certificate-link" href="assets/documents/Certificates/CodeXintern.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
                   <h3 class="mb-1">Web Developer Intern</h3>
                   <p class="timeline-company mb-0">Navodita Infotech</p>
                 </div>
-                <span class="timeline-date">Aug 2025 – Sep 2025</span>
+                <div class="timeline-meta">
+                  <span class="timeline-date">Aug 2025 – Sep 2025</span>
+                </div>
               </div>
               <p>Worked on a full-stack event-sharing website using PHP and MySQL, with a responsive frontend.</p>
               <p class="timeline-tech mb-0">PHP · MySQL · HTML · CSS · JavaScript</p>
+              <div class="timeline-card-footer">
+                <a class="certificate-link" href="assets/documents/Certificates/Navodita_Infotech.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              </div>
             </div>
           </article>
 
@@ -316,12 +345,218 @@
                   <h3 class="mb-1">Python Application Development Intern</h3>
                   <p class="timeline-company mb-0">IITM</p>
                 </div>
-                <span class="timeline-date">Nov 2022 – Dec 2022</span>
+                <div class="timeline-meta">
+                  <span class="timeline-date">Nov 2022 – Dec 2022</span>
+                </div>
               </div>
               <p>Worked on Python desktop applications, automation and file handling.</p>
+              <div class="timeline-card-footer">
+                <!-- Replace this placeholder with the IITM certificate file when available. -->
+                <a class="certificate-link" href="CERTIFICATE_PATH_HERE" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              </div>
             </div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- Certifications and achievements -->
+    <section id="certifications" class="section-pad">
+      <div class="container reveal">
+        <div class="section-heading">
+          <p class="section-kicker">CERTIFICATIONS &amp; ACHIEVEMENTS</p>
+          <h2>Certifications &amp; Achievements</h2>
+          <p class="section-summary mt-3">Selected certifications, training credentials and achievements that complement my academic and professional experience.</p>
+        </div>
+
+        <div class="row g-4" id="certificateGrid">
+          <div class="col-12 col-md-6 col-lg-4 certificate-item">
+            <article class="certificate-card h-100">
+              <a class="certificate-preview-link" href="assets/documents/Certificates/CodeXintern.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open CodeXintern certificate">
+                <div class="certificate-preview certificate-file-preview"><span>PDF</span><small>CodeXintern</small></div>
+              </a>
+              <div class="certificate-content">
+                <span class="certificate-category">Internship</span>
+                <h3>CodeXintern</h3>
+                <p class="certificate-issuer">Issuer details to be added</p>
+                <p class="certificate-date">Date to be added</p>
+                <a class="certificate-action" href="assets/documents/Certificates/CodeXintern.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 certificate-item">
+            <article class="certificate-card h-100">
+              <a class="certificate-preview-link" href="assets/documents/Certificates/Navodita_Infotech.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Navodita Infotech certificate">
+                <div class="certificate-preview certificate-file-preview"><span>PDF</span><small>Navodita Infotech</small></div>
+              </a>
+              <div class="certificate-content">
+                <span class="certificate-category">Internship</span>
+                <h3>Navodita Infotech</h3>
+                <p class="certificate-issuer">Issuer details to be added</p>
+                <p class="certificate-date">Date to be added</p>
+                <a class="certificate-action" href="assets/documents/Certificates/Navodita_Infotech.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 certificate-item">
+            <article class="certificate-card h-100">
+              <a class="certificate-preview-link" href="assets/documents/Certificates/INTRODUCTION%20TO%20AI%20by%20IBM.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open IBM Introduction to AI certificate">
+                <div class="certificate-preview certificate-file-preview"><span>PDF</span><small>Introduction to AI</small></div>
+              </a>
+              <div class="certificate-content">
+                <span class="certificate-category">AI &amp; Data</span>
+                <h3>INTRODUCTION TO AI by IBM</h3>
+                <p class="certificate-issuer">IBM</p>
+                <p class="certificate-date">Date to be added</p>
+                <a class="certificate-action" href="assets/documents/Certificates/INTRODUCTION%20TO%20AI%20by%20IBM.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 certificate-item">
+            <article class="certificate-card h-100">
+              <a class="certificate-preview-link" href="assets/documents/Certificates/python_certificats.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Python certificate">
+                <div class="certificate-preview certificate-file-preview"><span>PDF</span><small>Python</small></div>
+              </a>
+              <div class="certificate-content">
+                <span class="certificate-category">Technical Certification</span>
+                <h3>Python Certificates</h3>
+                <p class="certificate-issuer">Issuer details to be added</p>
+                <p class="certificate-date">Date to be added</p>
+                <a class="certificate-action" href="assets/documents/Certificates/python_certificats.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 certificate-item">
+            <article class="certificate-card h-100">
+              <a class="certificate-preview-link" href="assets/documents/Certificates/Web%20Development%20Training%20-%20Certificate%20of%20Completion.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Web Development Training certificate">
+                <div class="certificate-preview certificate-file-preview"><span>PDF</span><small>Web Development Training</small></div>
+              </a>
+              <div class="certificate-content">
+                <span class="certificate-category">Web Development</span>
+                <h3>Web Development Training</h3>
+                <p class="certificate-issuer">Certificate of Completion</p>
+                <p class="certificate-date">Date to be added</p>
+                <a class="certificate-action" href="assets/documents/Certificates/Web%20Development%20Training%20-%20Certificate%20of%20Completion.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 certificate-item">
+            <article class="certificate-card h-100">
+              <a class="certificate-preview-link" href="assets/documents/Certificates/git_and_github_certificate.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Git and GitHub certificate">
+                <div class="certificate-preview certificate-file-preview"><span>PDF</span><small>Git and GitHub</small></div>
+              </a>
+              <div class="certificate-content">
+                <span class="certificate-category">Technical Certification</span>
+                <h3>Git and GitHub Certificate</h3>
+                <p class="certificate-issuer">Issuer details to be added</p>
+                <p class="certificate-date">Date to be added</p>
+                <a class="certificate-action" href="assets/documents/Certificates/git_and_github_certificate.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 certificate-item certificate-extra">
+            <article class="certificate-card h-100">
+              <a class="certificate-preview-link" href="assets/documents/Certificates/DAY-1.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open DAY-1 certificate">
+                <div class="certificate-preview certificate-image-preview"><img src="assets/documents/Certificates/DAY-1.jpg" alt="DAY-1 certificate preview"></div>
+              </a>
+              <div class="certificate-content">
+                <span class="certificate-category">Achievement</span>
+                <h3>DAY-1</h3>
+                <p class="certificate-issuer">Issuer details to be added</p>
+                <p class="certificate-date">Date to be added</p>
+                <a class="certificate-action" href="assets/documents/Certificates/DAY-1.jpg" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 certificate-item certificate-extra">
+            <article class="certificate-card h-100">
+              <a class="certificate-preview-link" href="assets/documents/Certificates/45DSA.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open 45DSA certificate">
+                <div class="certificate-preview certificate-file-preview"><span>PDF</span><small>45DSA</small></div>
+              </a>
+              <div class="certificate-content">
+                <span class="certificate-category">Technical Certification</span>
+                <h3>45DSA</h3>
+                <p class="certificate-issuer">Issuer details to be added</p>
+                <p class="certificate-date">Date to be added</p>
+                <a class="certificate-action" href="assets/documents/Certificates/45DSA.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 certificate-item certificate-extra">
+            <article class="certificate-card h-100">
+              <a class="certificate-preview-link" href="assets/documents/Certificates/Front-end-by-meta.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Front-end by Meta certificate">
+                <div class="certificate-preview certificate-file-preview"><span>PDF</span><small>Front-end by Meta</small></div>
+              </a>
+              <div class="certificate-content">
+                <span class="certificate-category">Web Development</span>
+                <h3>Front-end-by-meta</h3>
+                <p class="certificate-issuer">Issuer details to be added</p>
+                <p class="certificate-date">Date to be added</p>
+                <a class="certificate-action" href="assets/documents/Certificates/Front-end-by-meta.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 certificate-item certificate-extra">
+            <article class="certificate-card h-100">
+              <a class="certificate-preview-link" href="assets/documents/Certificates/full_stack_certificate.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open full stack certificate">
+                <div class="certificate-preview certificate-file-preview"><span>PDF</span><small>Full Stack</small></div>
+              </a>
+              <div class="certificate-content">
+                <span class="certificate-category">Technical Certification</span>
+                <h3>full_stack_certificate</h3>
+                <p class="certificate-issuer">Issuer details to be added</p>
+                <p class="certificate-date">Date to be added</p>
+                <a class="certificate-action" href="assets/documents/Certificates/full_stack_certificate.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 certificate-item certificate-extra">
+            <article class="certificate-card h-100">
+              <a class="certificate-preview-link" href="assets/documents/Certificates/Internship%20%26%20Job%20Preparation%20Training%20-%20Certificate%20of%20Completion.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open internship and job preparation certificate">
+                <div class="certificate-preview certificate-file-preview"><span>PDF</span><small>Internship &amp; Job Preparation</small></div>
+              </a>
+              <div class="certificate-content">
+                <span class="certificate-category">Internship &amp; Training</span>
+                <h3>Internship &amp; Job Preparation Training</h3>
+                <p class="certificate-issuer">Certificate of Completion</p>
+                <p class="certificate-date">Date to be added</p>
+                <a class="certificate-action" href="assets/documents/Certificates/Internship%20%26%20Job%20Preparation%20Training%20-%20Certificate%20of%20Completion.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 certificate-item certificate-extra">
+            <article class="certificate-card h-100">
+              <a class="certificate-preview-link" href="assets/documents/Certificates/open_source.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open open source certificate">
+                <div class="certificate-preview certificate-file-preview"><span>PDF</span><small>Open Source</small></div>
+              </a>
+              <div class="certificate-content">
+                <span class="certificate-category">Open Source</span>
+                <h3>open_source</h3>
+                <p class="certificate-issuer">Issuer details to be added</p>
+                <p class="certificate-date">Date to be added</p>
+                <a class="certificate-action" href="assets/documents/Certificates/open_source.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 certificate-item certificate-extra">
+            <article class="certificate-card h-100">
+              <a class="certificate-preview-link" href="assets/documents/Certificates/tata.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open tata certificate">
+                <div class="certificate-preview certificate-file-preview"><span>PDF</span><small>tata</small></div>
+              </a>
+              <div class="certificate-content">
+                <span class="certificate-category">Achievement</span>
+                <h3>tata</h3>
+                <p class="certificate-issuer">Issuer details to be added</p>
+                <p class="certificate-date">Date to be added</p>
+                <a class="certificate-action" href="assets/documents/Certificates/tata.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <button class="btn btn-outline-light" id="certificateToggle" type="button" aria-expanded="false" aria-controls="certificateGrid">View All Certificates</button>
+        </div>
+        <p class="certificate-note mt-4 mb-0">Additional certificate files are available in <strong>assets/documents/Certificates</strong> and can be added to this grid as their titles, issuers and dates are confirmed.</p>
       </div>
     </section>
 
@@ -395,118 +630,6 @@
       <p class="mb-0">Built with HTML · CSS · JavaScript · Bootstrap 5</p>
     </div>
   </footer>
-
-  <!-- Project modals -->
-  <div class="modal fade" id="projectOneModal" tabindex="-1" aria-labelledby="projectOneModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
-      <div class="modal-content modal-dark">
-        <div class="modal-header border-0 pb-0">
-          <div>
-            <p class="modal-kicker mb-1">PROJECT 01</p>
-            <h2 class="modal-title fs-4" id="projectOneModalLabel">Smart Timetable Scheduler</h2>
-          </div>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="modal-visual project-visual project-visual-scheduler mb-4" role="img" aria-label="Placeholder visual for Smart Timetable Scheduler project"></div>
-          <p class="modal-section-title">Overview</p>
-          <p>An intelligent timetable generation system designed to automate academic scheduling while handling constraints such as faculty conflicts, room availability, lab requirements and subject frequency.</p>
-          <p class="modal-section-title">Main Features</p>
-          <ul class="modal-list">
-            <li>Automated timetable generation</li>
-            <li>Constraint handling for faculty, rooms and labs</li>
-            <li>Subject frequency management</li>
-            <li>Academic scheduling workflow</li>
-          </ul>
-          <p class="modal-section-title">Technologies</p>
-          <p class="mb-3">Python, PHP, JavaScript, Bootstrap, FastAPI, OR-Tools</p>
-          <p class="modal-section-title">Project Role / Contribution</p>
-          <p class="mb-0">YOUR_PROJECT_ROLE</p>
-        </div>
-        <div class="modal-footer border-0 pt-0">
-          <a class="btn btn-accent" href="#" data-placeholder="YOUR_GITHUB_URL">GitHub</a>
-          <a class="btn btn-outline-light" href="#" data-placeholder="YOUR_LIVE_DEMO_URL">Live Demo</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="projectTwoModal" tabindex="-1" aria-labelledby="projectTwoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
-      <div class="modal-content modal-dark">
-        <div class="modal-header border-0 pb-0">
-          <div>
-            <p class="modal-kicker mb-1">PROJECT 02</p>
-            <h2 class="modal-title fs-4" id="projectTwoModalLabel">AI Resume Screening</h2>
-          </div>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="modal-visual project-visual project-visual-ai mb-4" role="img" aria-label="Placeholder visual for AI Resume Screening project"></div>
-          <p class="modal-section-title">Overview</p>
-          <p>A hybrid resume screening framework combining TF-IDF semantic embeddings and rule-based skill verification to produce more explainable candidate rankings.</p>
-          <p class="modal-section-title">Main Features</p>
-          <ul class="modal-list">
-            <li>TF-IDF based text matching</li>
-            <li>SBERT semantic similarity scoring</li>
-            <li>Rule-based skill verification</li>
-            <li>Explainable candidate ranking flow</li>
-          </ul>
-          <p class="modal-section-title">Technologies</p>
-          <p class="mb-3">Python, TF-IDF, SBERT, NLP, spaCy</p>
-          <p class="modal-section-title">Project Role / Contribution</p>
-          <p class="mb-0">YOUR_PROJECT_ROLE</p>
-        </div>
-        <div class="modal-footer border-0 pt-0">
-          <a class="btn btn-accent" href="#" data-placeholder="YOUR_GITHUB_URL">GitHub</a>
-          <a class="btn btn-outline-light" href="#research">Research</a>
-          <a class="btn btn-outline-light" href="#" data-placeholder="YOUR_LIVE_DEMO_URL">Live Demo</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="projectThreeModal" tabindex="-1" aria-labelledby="projectThreeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
-      <div class="modal-content modal-dark">
-        <div class="modal-header border-0 pb-0">
-          <div>
-            <p class="modal-kicker mb-1">PROJECT 03</p>
-            <h2 class="modal-title fs-4" id="projectThreeModalLabel">Teacher &amp; Student Management System</h2>
-          </div>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="modal-visual project-visual project-visual-management mb-4" role="img" aria-label="Placeholder visual for Teacher and Student Management System project"></div>
-          <p class="modal-section-title">Overview</p>
-          <p>A web-based teacher and student management system developed as my Diploma major project, providing dedicated functionality for administrators, teachers and students.</p>
-          <p class="modal-section-title">Main Features</p>
-          <ul class="modal-list">
-            <li>Admin, student and teacher registration</li>
-            <li>Role-based dashboards</li>
-            <li>User profiles</li>
-            <li>Subject management</li>
-            <li>Marks management</li>
-            <li>Marks monitoring</li>
-            <li>Attendance tracking</li>
-            <li>Routine management</li>
-            <li>Assignment management</li>
-            <li>Assignment submission</li>
-            <li>Announcements</li>
-            <li>News and events</li>
-            <li>Responsive design</li>
-          </ul>
-          <p class="modal-section-title">Technologies</p>
-          <p class="mb-3">ASP.NET, HTML5, CSS3, Bootstrap 4, JavaScript, Microsoft SQL Server</p>
-          <p class="modal-section-title">Project Role / Contribution</p>
-          <p class="mb-0">YOUR_PROJECT_ROLE</p>
-        </div>
-        <div class="modal-footer border-0 pt-0">
-          <button class="btn btn-outline-light" type="button" disabled>GitHub</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
